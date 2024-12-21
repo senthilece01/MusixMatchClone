@@ -12,7 +12,7 @@ class BaseClassPageController extends GetxController {
   final screens = [
      HomePage(),
     const PlayPage(),
-    const ContributePage(),
+     ContributePage(),
     const IdentifyPage(),
     const SearchPage()
   ];

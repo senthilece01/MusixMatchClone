@@ -29,3 +29,11 @@ const String appleMusic = "Apple Music";
 // home
 const String top50India = "Top 50 India";
 const String viewAll = "View all";
+//contribute
+const String completeProfile = 'Complete your profile';
+const String fourtyPercent = '40%';
+const String takeAcademy = 'Take Academy and graduate';
+const String helpTheCommuniy = 'Help the community\nand get Premium free';
+const String weeklyContribution = 'Weekly Contribution';
+//identify
+const identifyContent = "Tap to identify lyrics for songs you're listening to";
