@@ -24,43 +24,69 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        toolbarHeight: 100,
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         elevation: 0,
-        title: Row(
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
-              'Home',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30),
-            ),
-            Image.asset(
-              ImagePathUtility.miniLogo,
-              width: 80,
-              height: 80,
-            )
+            SizedBox(
+                height: 60, child: Image.asset(ImagePathUtility.flutterLogo)),
+            const SizedBox(height: 30),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     const Text(
+            //       'Home',
+            //       style: TextStyle(
+            //           color: Colors.black,
+            //           fontWeight: FontWeight.bold,
+            //           fontSize: 30),
+            //     ),
+            //     IconButton(
+            //       icon: const Icon(Icons.settings, color: Colors.black),
+            //       onPressed: () {},
+            //     ),
+            //     // Image.asset(
+            //     //   ImagePathUtility.miniLogo,
+            //     //   width: 80,
+            //     //   height: 80,
+            //     // )
+            //   ],
+            // ),
           ],
         ),
         centerTitle: false,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.settings, color: Colors.black),
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     onPressed: () {},
+        //     icon: const Icon(Icons.settings, color: Colors.black),
+        //   ),
+        // ],
       ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: const Text(
+                'Home',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30),
+              ),
+            ),
             // 1
             // Top 50 Section
+
             const SizedBox(height: 12),
             Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 0.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
