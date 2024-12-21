@@ -26,3 +26,11 @@ const String choose  = "Choose your favorite music source and get the most out o
 const String later = "I will do it later";
 const String spotify = "Spotify";
 const String appleMusic = "Apple Music";
+//contribute
+const String completeProfile = 'Complete your profile';
+const String fourtyPercent = '40%';
+const String takeAcademy = 'Take Academy and graduate';
+const String helpTheCommuniy = 'Help the community\nand get Premium free';
+const String weeklyContribution = 'Weekly Contribution';
+//identify
+const identifyContent = "Tap to identify lyrics for songs you're listening to";
