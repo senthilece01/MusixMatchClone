@@ -27,10 +27,21 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         elevation: 0,
-        title: const Text(
-          'Home',
-          style: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),
+        title: Row(
+          children: [
+            const Text(
+              'Home',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30),
+            ),
+            Image.asset(
+              ImagePathUtility.miniLogo,
+              width: 80,
+              height: 80,
+            )
+          ],
         ),
         centerTitle: false,
         actions: [

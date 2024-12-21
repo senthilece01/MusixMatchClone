@@ -25,14 +25,23 @@ class _IdentifyPageState extends State<IdentifyPage> {
             Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
-                child: Text(
-                  textAlign: TextAlign.left,
-                  identify,
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: appleMusicColor,
-                  ),
+                child: Row(
+                  children: [
+                    Text(
+                      textAlign: TextAlign.left,
+                      identify,
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Image.asset(
+                      ImagePathUtility.miniLogo,
+                      width: 80,
+                      height: 80,
+                    )
+                  ],
                 )),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 25),

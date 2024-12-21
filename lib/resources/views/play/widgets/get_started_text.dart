@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musix_match_app/core/helpers/image_path_utility.dart';
 
 class GetStartedText extends StatelessWidget {
   const GetStartedText({
@@ -8,14 +9,24 @@ class GetStartedText extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Text(
-      textAlign: TextAlign.left,
-      title,
-      style: const TextStyle(
-        fontSize: 35,
-        fontWeight: FontWeight.bold,
-        letterSpacing: 0,
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          textAlign: TextAlign.left,
+          title,
+          style: const TextStyle(
+            fontSize: 35,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 0,
+          ),
+        ),
+        Image.asset(
+          ImagePathUtility.miniLogo,
+          width: 80,
+          height: 80,
+        )
+      ],
     );
   }
 }

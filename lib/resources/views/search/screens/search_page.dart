@@ -22,17 +22,27 @@ class _SearchPageState extends State<SearchPage> {
             const SizedBox(
               height: 20,
             ),
-            const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-                child: Text(
-                  textAlign: TextAlign.left,
-                  search,
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
+            Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                child: Row(
+                  children: [
+                    const Text(
+                      textAlign: TextAlign.left,
+                      search,
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Image.asset(
+                      ImagePathUtility.miniLogo,
+                      width: 80,
+                      height: 80,
+                    )
+                  ],
                 )),
-                const Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(horizontal: 25),
               child: Text(
                 searchContent,
@@ -40,7 +50,7 @@ class _SearchPageState extends State<SearchPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               child: TextFormField(
                 autocorrect: false,
                 enableSuggestions: false,

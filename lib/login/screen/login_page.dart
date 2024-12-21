@@ -17,6 +17,10 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      bottomNavigationBar: SafeArea(
+        child: SizedBox(
+            height: 50, child: Image.asset(ImagePathUtility.flutterLogo)),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -25,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(
-                  height: 40,
+                  height: 20,
                 ),
                 SizedBox(
                     height: 100, child: Image.asset(ImagePathUtility.logo)),
@@ -41,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(loginHeader1,
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 18))),
-                const SizedBox(height: 150),
+                const SizedBox(height: 50),
                 // const Spacer(),
                 Padding(
                   padding:
@@ -90,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 0,
                 ),
                 const Text(
                   goto,
