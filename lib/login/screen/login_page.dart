@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text("Get started!",),
+            Text("Get started!",style: TextStyle(fontSize: 23),),
             Text("Join our amazing community of music lovers")
           ],
         ),

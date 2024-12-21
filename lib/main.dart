@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: AppPages.routes,
-      initialRoute: AppRoutes.login,
+      initialRoute: AppRoutes.loginPage,
       // initialBinding: InitBindings(),
     );
   }
