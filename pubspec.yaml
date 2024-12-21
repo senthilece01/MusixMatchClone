@@ -75,6 +75,24 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Gordita
+      fonts:
+        - asset: fonts/Gordita-Regular.otf
+        - asset: fonts/Gordita-Black.otf
+        - asset: fonts/Gordita-BlackItalic.otf
+          style: italic
+        - asset: fonts/Gordita-Bold.otf
+          weight: 700
+        - asset: fonts/Gordita-BoldItalic.otf
+          weight: 700
+          style: italic
+        - asset: fonts/Gordita-Light.otf
+        - asset: fonts/Gordita-LightItalic.otf
+          style: italic
+        - asset: fonts/Gordita-Medium.otf
+        - asset: fonts/Gordita-MediumItalic.otf
+          style: italic
   # fonts:
   #   - family: Schyler
   #     fonts:
