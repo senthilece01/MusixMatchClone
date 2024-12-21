@@ -40,7 +40,7 @@ class ContributePage extends StatelessWidget {
               const SizedBox(height: 20),
               // Complete Profile Section
               Container(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(32),
                 decoration: BoxDecoration(
                   color: Colors.grey.shade200,
                   borderRadius: BorderRadius.circular(12),
@@ -50,7 +50,8 @@ class ContributePage extends StatelessWidget {
                   children: [
                     const Text(
                       completeProfile,
-                      style: TextStyle(fontSize: 18),
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                     Container(
                       padding: const EdgeInsets.all(8),
@@ -69,23 +70,26 @@ class ContributePage extends StatelessWidget {
               const SizedBox(height: 20),
               // Take Academy Section
               Container(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(32),
                 decoration: BoxDecoration(
                   color: Colors.orange.shade100,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
+                    Text(
                       takeAcademy,
-                      style: TextStyle(fontSize: 18, color: Colors.orange),
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.orange,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Image.asset(
-                      ImagePathUtility.logo,
-                      width: 40,
-                      height: 40,
-                    ),
+                    // Image.asset(
+                    //   ImagePathUtility.logo,
+                    //   width: 40,
+                    //   height: 40,
+                    // ),
                   ],
                 ),
               ),
@@ -93,31 +97,36 @@ class ContributePage extends StatelessWidget {
 
               // Help Community Section
               Container(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(32),
                 decoration: BoxDecoration(
                   color: Colors.purple.shade100,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
+                    Text(
                       helpTheCommuniy,
-                      style: TextStyle(fontSize: 18, color: Colors.purple),
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.purple,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Image.asset(
-                      ImagePathUtility.logo,
-                      width: 40,
-                      height: 40,
-                    ),
+                    // Image.asset(
+                    //   ImagePathUtility.logo,
+                    //   width: 40,
+                    //   height: 40,
+                    // ),
                   ],
                 ),
               ),
-              const SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               const Text(
-                    weeklyContribution,
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                  ),
+                weeklyContribution,
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),

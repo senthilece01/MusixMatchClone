@@ -3,7 +3,22 @@ import 'package:musix_match_app/core/constant.dart';
 import 'package:musix_match_app/core/helpers/image_path_utility.dart';
 import 'package:musix_match_app/resources/views/home/models/home_model.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  var weeklySongs = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    weeklySongs = top50IndiaAry..shuffle();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,8 +114,11 @@ class HomePage extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
               child: Text(
-                'For the artists',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                forTheArtist,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24),
               ),
             ),
             Padding(
@@ -147,7 +165,7 @@ class HomePage extends StatelessWidget {
               height: 250, // Adjust height as needed
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: top50IndiaAry.reversed.length,
+                itemCount: weeklySongs.length,
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),

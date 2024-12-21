@@ -29,6 +29,8 @@ const String appleMusic = "Apple Music";
 // home
 const String top50India = "Top 50 India";
 const String viewAll = "View all";
+const String forTheArtist = "For the artists";
+
 //contribute
 const String completeProfile = 'Complete your profile';
 const String fourtyPercent = '40%';
