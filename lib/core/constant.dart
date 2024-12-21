@@ -36,4 +36,6 @@ const String takeAcademy = 'Take Academy and graduate';
 const String helpTheCommuniy = 'Help the community\nand get Premium free';
 const String weeklyContribution = 'Weekly Contribution';
 //identify
-const identifyContent = "Tap to identify lyrics for songs you're listening to";
+const String identifyContent = "Tap to identify lyrics for songs you're listening to";
+// search 
+const String searchContent = "Get your favorite lyrics, now";

@@ -23,7 +23,8 @@ class _IdentifyPageState extends State<IdentifyPage> {
               height: 20,
             ),
             Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 child: Text(
                   textAlign: TextAlign.left,
                   identify,
