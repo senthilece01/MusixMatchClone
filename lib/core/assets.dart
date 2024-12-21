@@ -11,6 +11,8 @@ Color gradientGreen6 = HexColorValue('#04503f');
 Color gradientGreen7 = HexColorValue('#055744');
 Color gradientGreen8 = HexColorValue('#08cf78');
 Color gradientGreen9 = HexColorValue('#05614b');
+Color lightGreyColor = const Color(0xFFF2F2F2);
+Color fbLoginColor = HexColorValue('#1977F3');
 
 class HexColorValue extends Color {
   static int _getColorFromHex(String hexColor) {

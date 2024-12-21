@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:musix_match_app/route/app_route.dart';
 
 class LoginButton extends StatefulWidget {
   const LoginButton(
-      {super.key, required this.backgroundColor, required this.header, required this.icon});
+      {super.key,
+      required this.backgroundColor,
+      required this.textColor,
+      required this.header,
+      required this.icon});
   final Color backgroundColor;
+  final Color textColor;
   final String header;
   final FaIcon icon;
 
@@ -15,10 +23,11 @@ class LoginButton extends StatefulWidget {
 class _LoginButtonState extends State<LoginButton> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
+          elevation: 0,
           backgroundColor: widget.backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
@@ -28,7 +37,9 @@ class _LoginButtonState extends State<LoginButton> {
             horizontal: 32,
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(AppRoutes.baseClassPage);
+        },
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -36,10 +47,10 @@ class _LoginButtonState extends State<LoginButton> {
             const SizedBox(width: 30),
             Text(
               widget.header,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 16,
-                color: Colors.black,
-                fontWeight: FontWeight.w400,
+                color: widget.textColor,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ],

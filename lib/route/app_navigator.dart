@@ -5,11 +5,11 @@ class AppNavigator {
   AppNavigator._();
 
   static void startLogin() {
-    Get.offAllNamed(AppRoutes.login);
+    Get.offAllNamed(AppRoutes.loginPage);
   }
 
   static void startBackLogin() {
-    Get.until((route) => Get.currentRoute == AppRoutes.login);
+    Get.until((route) => Get.currentRoute == AppRoutes.loginPage);
   }
 
   static void startMain({bool isAutoLogin = false}) {
