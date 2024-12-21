@@ -10,7 +10,7 @@ class BaseClassPageController extends GetxController {
   RxBool isLoading = false.obs;
 
   final screens = [
-    const HomePage(),
+     HomePage(),
     const PlayPage(),
     const ContributePage(),
     const IdentifyPage(),
