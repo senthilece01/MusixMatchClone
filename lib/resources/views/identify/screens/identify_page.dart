@@ -22,8 +22,8 @@ class _IdentifyPageState extends State<IdentifyPage> {
             const SizedBox(
               height: 20,
             ),
-            const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+             Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 child: Text(
                   textAlign: TextAlign.left,
                   identify,

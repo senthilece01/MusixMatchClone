@@ -26,6 +26,9 @@ const String choose  = "Choose your favorite music source and get the most out o
 const String later = "I will do it later";
 const String spotify = "Spotify";
 const String appleMusic = "Apple Music";
+// home
+const String top50India = "Top 50 India";
+const String viewAll = "View all";
 //contribute
 const String completeProfile = 'Complete your profile';
 const String fourtyPercent = '40%';
