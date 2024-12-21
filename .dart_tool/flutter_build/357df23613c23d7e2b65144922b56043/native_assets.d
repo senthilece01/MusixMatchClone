@@ -1,0 +1,1 @@
+ /Users/Development/code/MusixMatchClone/.dart_tool/flutter_build/357df23613c23d7e2b65144922b56043/native_assets.yaml: 
