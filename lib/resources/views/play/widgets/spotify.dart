@@ -22,7 +22,7 @@ class _SpotifyState extends State<Spotify> {
         width: double.infinity,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(8)),
-          color: errorTextColor
+          color: appleMusicColor
         ),
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),

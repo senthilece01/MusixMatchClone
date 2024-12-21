@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 
 Color primaryColor = HexColorValue('#fc532e');
+const Color appleMusicColor = Color.fromARGB(255, 220, 82, 82);
+Color gradientGreen1 = HexColorValue('#00b468');
+Color gradientGreen2 = HexColorValue('#06bf6f');
+Color gradientGreen3 = HexColorValue('#008f52');
+Color gradientGreen4 = HexColorValue('#035643');
+Color gradientGreen5 = HexColorValue('#024536');
+Color gradientGreen6 = HexColorValue('#04503f');
+Color gradientGreen7 = HexColorValue('#055744');
+Color gradientGreen8 = HexColorValue('#08cf78');
+Color gradientGreen9 = HexColorValue('#05614b');
 
 class HexColorValue extends Color {
   static int _getColorFromHex(String hexColor) {
