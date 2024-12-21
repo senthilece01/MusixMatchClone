@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:musix_match_app/core/constant.dart';
 import 'package:musix_match_app/core/helpers/image_path_utility.dart';
+import 'package:musix_match_app/resources/views/home/models/home_model.dart';
 
-class ContributePage extends StatelessWidget {
+class ContributePage extends StatefulWidget {
+  @override
+  State<ContributePage> createState() => _ContributePageState();
+}
+
+class _ContributePageState extends State<ContributePage> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -126,6 +133,46 @@ class ContributePage extends StatelessWidget {
               const Text(
                 weeklyContribution,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              SizedBox(
+                height: 270,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: top50IndiaAry.length,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: Image.asset(
+                              top50IndiaAry[index].imageURL!,
+                              height: 200,
+                              width: 150,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            top50IndiaAry[index].title!,
+                            style: const TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
+                          Text(
+                            top50IndiaAry[index].subTitle!,
+                            style: const TextStyle(color: Colors.grey),
+                          ),
+                          
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
             ],
           ),
