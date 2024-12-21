@@ -14,9 +14,7 @@ class _AppleMusicState extends State<AppleMusic> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        
-      },
+      onTap: () {},
       child: Container(
         height: 50,
         width: double.infinity,
@@ -38,11 +36,12 @@ class _AppleMusicState extends State<AppleMusic> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-               FaIcon(FontAwesomeIcons.spotify, color: Colors.white),
-               SizedBox(width: 10,),
-              Text(
-                spotify, style: TextStyle(color: Colors.white,fontSize: 18)          
+              FaIcon(FontAwesomeIcons.spotify, color: Colors.white),
+              SizedBox(
+                width: 10,
               ),
+              Text(spotify,
+                  style: TextStyle(color: Colors.white, fontSize: 18)),
             ],
           ),
         ),

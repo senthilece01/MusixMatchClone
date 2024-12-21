@@ -14,25 +14,25 @@ class _SpotifyState extends State<Spotify> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        
-      },
+      onTap: () {},
       child: Container(
         height: 50,
         width: double.infinity,
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-          color: appleMusicColor
-        ),
+        decoration: BoxDecoration(
+            borderRadius: const BorderRadius.all(Radius.circular(8)),
+            color: appleMusicColor),
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               FaIcon(FontAwesomeIcons.music, color: Colors.white),
-              SizedBox(width: 10,),
+              SizedBox(
+                width: 10,
+              ),
               Text(
-                appleMusic,style: TextStyle(color: Colors.white,fontSize: 18),
+                appleMusic,
+                style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             ],
           ),
