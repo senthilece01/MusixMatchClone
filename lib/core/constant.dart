@@ -14,4 +14,11 @@ const String play = "Play";
 const String contribute = "Contribute";
 const String identify = "Identify";
 const String search = "Search";
-
+// login
+const String loginHeader = "Get started!";
+const String loginHeader1 = "Join our amazing community of music lovers";
+const String google = "Continue with Google";
+const String facebook = "Continue with Facebook";
+const String email = "Continue with Email";
+const String artist = "Are you an artist?";
+const String goto = "Go to Musixmatch Pro";
