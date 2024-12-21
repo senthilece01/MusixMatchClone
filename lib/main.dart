@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musix_match_app/bindings/init_bindings.dart';
 import 'package:musix_match_app/login/screen/login_page.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -40,8 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: AppPages.routes,
-      initialRoute: AppRoutes.loginPage,
-      // initialBinding: InitBindings(),
+      initialRoute: AppRoutes.baseClassPage,
+      initialBinding: InitBindings(),
     );
   }
 }
