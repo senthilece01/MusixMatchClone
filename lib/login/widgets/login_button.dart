@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginButton extends StatefulWidget {
   const LoginButton(
@@ -29,10 +28,10 @@ class _LoginButtonState extends State<LoginButton> {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const FaIcon(
-            FontAwesomeIcons.arrowRight,
-            color: Colors.black,
-          ),
+          // const FaIcon(
+          //   FontAwesomeIcons.arrowRight,
+          //   color: Colors.black,
+          // ),
           const SizedBox(width: 8),
           Text(
             widget.header,
