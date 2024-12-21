@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musix_match_app/core/assets.dart';
 import 'package:musix_match_app/core/constant.dart';
 import 'package:musix_match_app/core/helpers/image_path_utility.dart';
 import 'package:musix_match_app/resources/views/home/models/home_model.dart';
@@ -244,7 +245,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'New albums',
+                    'Regional',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -267,31 +268,42 @@ class _HomePageState extends State<HomePage> {
               height: 200, // Adjust height as needed
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: 10,
+                itemCount: 4,
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
+                        Container(
+                          height: 150,
+                          width: 150,
+                          color: paleOrange,
                           child: Image.asset(
-                            'assets/listimage.jpeg',
+                            'assets/$index.jpeg',
                             height: 150,
                             width: 150,
                             fit: BoxFit.cover,
                           ),
                         ),
+                        // ClipRRect(
+                        //   borderRadius: BorderRadius.circular(8),
+                        //   child: Image.asset(
+                        //     'assets/listimage.jpeg',
+                        //     height: 150,
+                        //     width: 150,
+                        //     fit: BoxFit.cover,
+                        //   ),
+                        // ),
                         const SizedBox(height: 8),
-                        const Text(
-                          'Saheli',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        const Text(
-                          'Savi Kahlon',
-                          style: TextStyle(color: Colors.grey),
-                        ),
+                        // const Text(
+                        //   'Saheli',
+                        //   style: TextStyle(fontWeight: FontWeight.bold),
+                        // ),
+                        // const Text(
+                        //   'Savi Kahlon',
+                        //   style: TextStyle(color: Colors.grey),
+                        // ),
                       ],
                     ),
                   );
