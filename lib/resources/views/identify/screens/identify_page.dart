@@ -22,8 +22,9 @@ class _IdentifyPageState extends State<IdentifyPage> {
             const SizedBox(
               height: 20,
             ),
-             Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+            Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 child: Text(
                   textAlign: TextAlign.left,
                   identify,
@@ -40,8 +41,12 @@ class _IdentifyPageState extends State<IdentifyPage> {
                 style: TextStyle(fontSize: 18),
               ),
             ),
-            const SizedBox(height: 160,),
-            Center(child: SizedBox(height: 100, child: Image.asset(ImagePathUtility.logo))),
+            const SizedBox(
+              height: 160,
+            ),
+            Center(
+                child: SizedBox(
+                    height: 100, child: Image.asset(ImagePathUtility.logo))),
           ],
         ),
       ),
