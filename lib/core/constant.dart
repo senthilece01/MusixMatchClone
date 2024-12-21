@@ -6,8 +6,6 @@ const String welcome = "Welcome";
 const String toastText = "Invalid Email or Password";
 const String noDataFoundInYourCollection = "No data found in your collection";
 
-const fontName = 'Gordita';
-
 // Home
 const String home = "Home";
 const String play = "Play";
