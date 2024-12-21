@@ -20,3 +20,9 @@ const String facebook = "Continue with Facebook";
 const String email = "Continue with Email";
 const String artist = "Are you an artist?";
 const String goto = "Go to Musixmatch Pro";
+// playlist
+const String connect = "Connect your \nmusic";
+const String choose  = "Choose your favorite music source and get the most out of Musixmatch";
+const String later = "I will do it later";
+const String spotify = "Spotify";
+const String appleMusic = "Apple Music";
