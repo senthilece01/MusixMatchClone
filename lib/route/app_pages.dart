@@ -2,7 +2,7 @@ import 'package:get/get_instance/src/bindings_interface.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:musix_match_app/login/screen/login_page.dart';
-import 'package:musix_match_app/resources/views/home/screens/home_page.dart';
+import 'package:musix_match_app/resources/views/base_class/screens/base_class_page.dart';
 import 'package:musix_match_app/route/app_route.dart';
 
 class AppPages {
@@ -26,8 +26,8 @@ class AppPages {
   static final routes = <GetPage>[
     // 1
     _pageBuilder(
-      name: AppRoutes.login,
-      page: () => const HomePage(),
+      name: AppRoutes.baseClassPage,
+      page: () => BaseClassPage(),
     ),
 
     _pageBuilder(
